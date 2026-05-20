@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Loss Prevention Behaviour Check"
+version = "1.0.0"
+id = "artifacts/loss-prevention"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25052
+
+[services.development]
+run = "pnpm --filter @workspace/loss-prevention run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/loss-prevention", "run", "build" ]
+publicDir = "artifacts/loss-prevention/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25052"
+BASE_PATH = "/"
