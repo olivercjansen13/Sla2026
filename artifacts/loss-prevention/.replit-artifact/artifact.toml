@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "Loss Prevention Behaviour Check"
+title = "SLA Check"
 version = "1.0.0"
 id = "artifacts/loss-prevention"
 router = "path"
