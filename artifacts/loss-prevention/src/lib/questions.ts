@@ -38,7 +38,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "fe_03",
-    text: "Are checkout operators following the 'scan every item' policy with no items left in the trolley?",
+    text: "Are checkout operators following the 'scan all items' policy with no items left in the trolley?",
     category: "Front End",
     weight: 2,
     hint: "Observe at least 2 operators during live transactions.",
