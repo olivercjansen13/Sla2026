@@ -31,7 +31,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "fe_02",
-    text: "Are all self-checkout lanes monitored by a team member with clear sightlines to every screen?",
+    text: "Are all self-checkout lanes marked in red paint?",
     category: "Front End",
     weight: 2,
     hint: "No lane should be left unattended for more than 2 minutes.",
